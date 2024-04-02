@@ -1,20 +1,33 @@
-const NewOrderForm = ({orderStatus, supermarketId}) => {
-    
+import { useState } from "react"
+
+const NewOrderForm = ({supermarkets, postNewOrder, supermarketId, setSupermarketId}) => {
     
 
+    const supermarketOptions = supermarkets.map(supermarket => {
+        return <option key = {supermarket.id} value={supermarket.id}> {supermarket.name}</option>
+    })
     
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        postNewOrder(supermarketId);
+        
+    }
+
     return ( 
         <>
             <form>
-                <label htmlFor="store-name">Store Branch:</label>
+                <label htmlFor="supermarket-name">Select Supermarket:</label>
                 <select
-                    id="store-name"
+                    id="supermarket-name"
                     type="text"
-                    defaultValue="select-branch"
+                    name="name"
+                    defaultValue="select-supermarket"
+                    onChange={(event) => setSupermarketId(event.target.value)}
                 >
-                    <option disabled value="select-branch">Choose Branch</option>
+                    <option disabled value="select-supermarket">Choose Supermarket</option>
+                    {supermarketOptions}
                 </select>
-                <button>Submit</button>
+                <button onClick={handleSubmit}>Start New Order</button>
             </form>
             
         </>
