@@ -2,8 +2,8 @@ const OrderedItem = ({ orderedItem }) => {
     return ( 
         <>
             <li>
-                <p>Item: {orderedItem.stock.item.name}</p>
-                <p>Quantity: {orderedItem.orderQuantity}</p>
+                {/* <p>Item: {orderedItem.stock.item.name}</p>
+                <p>Quantity: {orderedItem.orderQuantity}</p> */}
             </li>
         </>
      );
