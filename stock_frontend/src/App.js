@@ -1,12 +1,13 @@
 import './App.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import OrdersContainer from './containers/OrdersContainer';
+import OrderContainer from './containers/OrderContainer';
 import HomepageContainer from './containers/HomepageContainer';
 import Navigation from './components/Navigation';
-import OrdersList from './components/OrdersList';
+import OrderList from './components/OrderList';
 import NewOrderForm from './components/NewOrderForm';
 import NewOrderedItemForm from './components/NewOrderedItemForm';
+import NewOrderContainer from './containers/NewOrderContainer';
 
 
 function App() {
@@ -22,11 +23,11 @@ function App() {
       children: [
         {
           path: "/orders",
-          element: <OrdersList />
+          element: <OrderContainer />
         },
         {
           path: "/orders/new",
-          element: <NewOrderForm />,
+          element: <NewOrderContainer />,
           children: [
             {
               path:"/orders/new/addItems",
