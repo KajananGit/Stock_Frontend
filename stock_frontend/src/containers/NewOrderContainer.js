@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react"
+
 import NewOrderForm from "../components/NewOrderForm";
 import NewOrderedItemForm from "../components/NewOrderedItemForm";
+
 const NewOrderContainer = () => {
 
     // For NewOrderForm
@@ -9,17 +11,9 @@ const NewOrderContainer = () => {
     
     // For NewOrderedItemForm
     const [items, setItems] = useState([]);
-    const [newOrderId, setNewOrderId] = useState([]);
-    const [stocks, setStocks] = useState([]);
+    const [newOrderId, setNewOrderId] = useState(null);
 
     // Fetching Data
-    const loadStocksData = async () => {
-        const response = await fetch("http://localhost:8080/stocks");
-        const jsonData = await response.json();
-        setStocks(jsonData);
-    
-    }
-
     const loadSupermarketsData = () => {
         return [
             {"id": 1, "name": "Tesco"},
@@ -51,9 +45,21 @@ const NewOrderContainer = () => {
         const newOrder = await response.json();
         setNewOrderId(newOrder.id);
     }
+
+    const postOrderedItem = async (stockId, quantity) => {
+        const response = await fetch("http://localhost:8080/ordered-items", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({
+                "stockId" : stockId,
+                "orderId" : newOrderId,
+                "orderQuantity" : quantity
+                })
+        })
+        console.log(response);
+    }
     
     useEffect(() => {
-        loadStocksData();
         setSupermarkets(loadSupermarketsData());
         loadItemsData();
     }, []);
@@ -61,7 +67,7 @@ const NewOrderContainer = () => {
     return ( 
         <>
         <NewOrderForm supermarkets={supermarkets} supermarketId = {supermarketId} setSupermarketId={setSupermarketId} postNewOrder={postNewOrder} />
-        <NewOrderedItemForm items = {items} newOrderId={newOrderId} stocks={stocks}/>
+        <NewOrderedItemForm items = {items} postOrderedItem={postOrderedItem} newOrderId={newOrderId}/>
         </>
     );
 }
