@@ -1,12 +1,18 @@
-import Order from "./Order";
+import Order from './Order';
 
-const OrderList = () => {
+const OrderList = ({ orders, orderedItems, deleteOrder }) => {
+
+    const mappedOrders = orders.map(order => {
+        return <Order key={order.id} order={order} 
+        orderedItems={orderedItems.filter(orderedItem => orderedItem.order.id === order.id)}
+        deleteOrder={deleteOrder}/>
+    });
+
     return ( 
-        <>
-            <h2>Hello from the OrdersList component</h2>
-            <Order />
-        </>
-     );
+        <div>
+            {mappedOrders}
+        </div>
+    );
 };
  
 export default OrderList;
