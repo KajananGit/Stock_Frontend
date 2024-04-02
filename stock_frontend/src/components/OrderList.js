@@ -9,7 +9,6 @@ const OrderList = ({ orders, orderedItems }) => {
 
     return ( 
         <div>
-            <h2>Hello from the OrderList component</h2>
             {mappedOrders}
         </div>
     );

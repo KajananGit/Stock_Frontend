@@ -28,7 +28,7 @@ const OrderContainer = () => {
     
     return (
         <>
-            <h1>Hello from the OrderContainer</h1>
+            <h1>Orders</h1>
             <OrderList orders={orders} orderedItems={orderedItems}/>
             
         </>
