@@ -8,6 +8,8 @@ const NewOrderContainer = () => {
     const [supermarketId , setSupermarketId] = useState(null);
     
     // For NewOrderedItemForm
+    const [items, setItems] = useState([]);
+    const [newOrderId, setNewOrderId] = useState([]);
     const [stocks, setStocks] = useState([]);
 
     // Fetching Data
@@ -28,6 +30,13 @@ const NewOrderContainer = () => {
         ]
     }
 
+    const loadItemsData = async () => {
+        const response = await fetch("http://localhost:8080/items");
+        const jsonData = await response.json();
+        setItems(jsonData);
+
+    }
+
     // Post Requests
     const postNewOrder = async (supermarketId) => {
         const response = await fetch("http://localhost:8080/orders", {
@@ -37,19 +46,22 @@ const NewOrderContainer = () => {
                 "supermarketId" : supermarketId
                 })
         })
+
+        // Get Id of the newOrder to pass into the OrderItems for the POST requests
         const newOrder = await response.json();
-        console.log(newOrder);
+        setNewOrderId(newOrder.id);
     }
     
     useEffect(() => {
         loadStocksData();
         setSupermarkets(loadSupermarketsData());
+        loadItemsData();
     }, []);
 
     return ( 
         <>
         <NewOrderForm supermarkets={supermarkets} supermarketId = {supermarketId} setSupermarketId={setSupermarketId} postNewOrder={postNewOrder} />
-        <NewOrderedItemForm  />
+        <NewOrderedItemForm items = {items} newOrderId={newOrderId} stocks={stocks}/>
         </>
     );
 }
