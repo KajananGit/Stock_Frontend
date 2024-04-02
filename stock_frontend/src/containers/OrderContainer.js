@@ -40,7 +40,7 @@ const OrderContainer = () => {
     return (
         <>
             <h1>Hello from the OrderContainer</h1>
-            <OrderList orders={orders} />
+            <OrderList orders={orders} orderedItems={orderedItems}/>
             
         </>
       );

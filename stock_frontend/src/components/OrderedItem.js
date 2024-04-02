@@ -1,7 +1,10 @@
-const OrderedItem = () => {
+const OrderedItem = ({ orderedItem }) => {
     return ( 
         <>
-        <p>Ordered items are placed here</p>
+            <li>
+                <p>Item: {orderedItem.stock.item.name}</p>
+                <p>Quantity: {orderedItem.orderQuantity}</p>
+            </li>
         </>
      );
 }
