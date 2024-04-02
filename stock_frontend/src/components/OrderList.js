@@ -1,6 +1,6 @@
 import Order from "./Order";
 
-const OrdersList = () => {
+const OrderList = () => {
     return ( 
         <>
             <h2>Hello from the OrdersList component</h2>
@@ -9,4 +9,4 @@ const OrdersList = () => {
      );
 };
  
-export default OrdersList;
+export default OrderList;
