@@ -1,12 +1,15 @@
-import Order from "./Order";
+import React from 'react';
+import Order from './Order';
 
-const OrderList = () => {
+const OrderList = ({ orders }) => {
     return ( 
-        <>
-            <h2>Hello from the OrdersList component</h2>
-            <Order />
-        </>
-     );
+        <div>
+            <h2>Hello from the OrderList component</h2>
+            {orders.map(order => (
+                <Order key={order.id} />
+            ))}
+        </div>
+    );
 };
  
 export default OrderList;
