@@ -1,7 +1,11 @@
-const NewOrderForm = () => {
+const NewOrderForm = ({}) => {
     return ( 
         <>
             <p>New Order Form goes here!</p>
+            <from>
+                <input/>
+                <input/>
+            </from>
         </>
      );
 }
