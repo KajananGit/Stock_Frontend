@@ -4,8 +4,6 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import OrderContainer from './containers/OrderContainer';
 import HomepageContainer from './containers/HomepageContainer';
 import Navigation from './components/Navigation';
-import OrderList from './components/OrderList';
-import NewOrderForm from './components/NewOrderForm';
 import NewOrderedItemForm from './components/NewOrderedItemForm';
 import NewOrderContainer from './containers/NewOrderContainer';
 

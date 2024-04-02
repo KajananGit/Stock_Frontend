@@ -1,8 +1,4 @@
 import OrderList from "../components/OrderList";
-import Navigation from "../components/Navigation";
-import OrderSearch from "../components/OrderSearch";
-import NewOrderedItemForm from "../components/NewOrderedItemForm";
-import NewOrderForm from "../components/NewOrderForm";
 import { useEffect, useState } from "react";
 
 const OrderContainer = () => {
@@ -17,12 +13,6 @@ const OrderContainer = () => {
         setOrders(data);
     }
 
-    const fetchSupermarkets = async () => {
-        const response = await fetch("http://localhost:8080/supermarkets");
-        const data = await response.json();
-        setSupermarkets(data);
-    }
-
     const fetchOrderedItems = async () => {
         const response = await fetch("http://localhost:8080/ordered-items");
         const data = await response.json();
@@ -32,7 +22,6 @@ const OrderContainer = () => {
     useEffect(()=> {
         fetchOrderedItems()
         fetchOrders()
-        fetchSupermarkets()
     },[]);
 
 
