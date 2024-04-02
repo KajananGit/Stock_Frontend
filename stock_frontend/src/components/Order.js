@@ -1,10 +1,14 @@
 import OrderedItem from "./OrderedItem";
 
-const Order = ({ order, orderedItems }) => {
+const Order = ({ order, orderedItems, deleteOrder }) => {
 
     const mappedItems = orderedItems.map(item => {
         return <OrderedItem orderedItem={item}/>
     })
+
+    const handleDeleteButton = () => {
+        deleteOrder(order.id);
+    }
 
     return (
         <>
@@ -13,6 +17,7 @@ const Order = ({ order, orderedItems }) => {
             <p>Supermarket: {order.supermarket.name}, {order.supermarket.location}</p>
             <h4>Items ordered:</h4>
             <ul>{mappedItems}</ul>
+            <button onClick={handleDeleteButton}>Delete</button>
         </>
     );
 }
