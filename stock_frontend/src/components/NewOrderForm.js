@@ -1,7 +1,22 @@
-const NewOrderForm = () => {
+const NewOrderForm = ({orderStatus, supermarketId}) => {
+    
+    
+
+    
     return ( 
         <>
-            <p>New Order Form goes here!</p>
+            <form>
+                <label htmlFor="store-name">Store Branch:</label>
+                <select
+                    id="store-name"
+                    type="text"
+                    defaultValue="select-branch"
+                >
+                    <option disabled value="select-branch">Choose Branch</option>
+                </select>
+                <button>Submit</button>
+            </form>
+            
         </>
      );
 }
