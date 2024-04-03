@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react"
+
 import NewOrderForm from "../components/NewOrderForm";
 import NewOrderedItemForm from "../components/NewOrderedItemForm";
+
 const NewOrderContainer = () => {
 
     // For NewOrderForm
@@ -8,16 +10,10 @@ const NewOrderContainer = () => {
     const [supermarketId , setSupermarketId] = useState(null);
     
     // For NewOrderedItemForm
-    const [stocks, setStocks] = useState([]);
+    const [items, setItems] = useState([]);
+    const [newOrderId, setNewOrderId] = useState(null);
 
     // Fetching Data
-    const loadStocksData = async () => {
-        const response = await fetch("http://localhost:8080/stocks");
-        const jsonData = await response.json();
-        setStocks(jsonData);
-    
-    }
-
     const loadSupermarketsData = () => {
         return [
             {"id": 1, "name": "Tesco"},
@@ -26,6 +22,13 @@ const NewOrderContainer = () => {
             {"id": 4, "name": "Lidl"},
             {"id": 5, "name": "Waitrose"}          
         ]
+    }
+
+    const loadItemsData = async () => {
+        const response = await fetch("http://localhost:8080/items");
+        const jsonData = await response.json();
+        setItems(jsonData);
+
     }
 
     // Post Requests
@@ -37,19 +40,34 @@ const NewOrderContainer = () => {
                 "supermarketId" : supermarketId
                 })
         })
+
+        // Get Id of the newOrder to pass into the OrderItems for the POST requests
         const newOrder = await response.json();
-        console.log(newOrder);
+        setNewOrderId(newOrder.id);
+    }
+
+    const postOrderedItem = async (stockId, quantity) => {
+        const response = await fetch("http://localhost:8080/ordered-items", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({
+                "stockId" : stockId,
+                "orderId" : newOrderId,
+                "orderQuantity" : quantity
+                })
+        })
+        console.log(response);
     }
     
     useEffect(() => {
-        loadStocksData();
         setSupermarkets(loadSupermarketsData());
+        loadItemsData();
     }, []);
 
     return ( 
         <>
         <NewOrderForm supermarkets={supermarkets} supermarketId = {supermarketId} setSupermarketId={setSupermarketId} postNewOrder={postNewOrder} />
-        <NewOrderedItemForm  />
+        <NewOrderedItemForm items = {items} postOrderedItem={postOrderedItem} newOrderId={newOrderId}/>
         </>
     );
 }

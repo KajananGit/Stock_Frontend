@@ -3,7 +3,7 @@ import OrderedItem from "./OrderedItem";
 const Order = ({ order, orderedItems, deleteOrder }) => {
 
     const mappedItems = orderedItems.map(item => {
-        return <OrderedItem orderedItem={item}/>
+        return <OrderedItem orderedItem={item} key={item.id}/>
     })
 
     const handleDeleteButton = () => {
