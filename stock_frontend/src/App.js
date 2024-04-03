@@ -6,6 +6,7 @@ import HomepageContainer from './containers/HomepageContainer';
 import Navigation from './components/Navigation';
 import NewOrderedItemForm from './components/NewOrderedItemForm';
 import NewOrderContainer from './containers/NewOrderContainer';
+import "./assets/logos/logo-horizontal.png";
 
 
 function App() {
@@ -40,8 +41,7 @@ function App() {
   return (
     <>
       <header>
-        <h1>Shelf-A-Warehouse</h1>
-        <h3>Fully aware of all your stocking needs!</h3>
+        <img src='./assets/logos/logo-horizontal.png' alt='logo'/>
       </header>
       
       <RouterProvider router={warehouseRoutes} />

@@ -1,0 +1,26 @@
+
+.homepage-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #373F51;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.homepage-nav button{
+    display: flex;
+    justify-content: space-around;
+    margin: inherit;
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+    font-size: xx-large;
+    font-weight: bold;
+    align-items: center;
+    background-color: #c29a4b;
+    outline-color: black;
+    outline-style: solid;
+}
+
+
+
