@@ -7,6 +7,7 @@ import Navigation from './components/Navigation';
 import NewOrderedItemForm from './components/NewOrderedItemForm';
 import NewOrderContainer from './containers/NewOrderContainer';
 import logo from "./assets/logos/logo-horizontal.png";
+import AudioPlayer from './AudioPlayer';
 
 
 function App() {
@@ -42,9 +43,12 @@ function App() {
     <>
       <header>
         <img src={logo} alt='logo'/>
+        <div className='audio'><AudioPlayer /></div>
+        
       </header>
       
       <RouterProvider router={warehouseRoutes} />
+      
     </>
   );
 }
