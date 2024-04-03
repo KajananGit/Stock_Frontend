@@ -52,6 +52,7 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId} ) => {
         event.preventDefault();
         
         postAllOrderedItems();
+        alert("Order recorded, please do not try to place it again");
     }
 
     // Iterate through the orderItemsMap
