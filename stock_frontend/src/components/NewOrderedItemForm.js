@@ -55,10 +55,6 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId, orderPlaced, s
         postAllOrderedItems();
         alert("Order recorded, please do not try to place it again");
         setOrderPlaced(true);
-
-        setTimeout(() => {
-            setOrderPlaced(false);
-        }, 2000)
     }
 
 
