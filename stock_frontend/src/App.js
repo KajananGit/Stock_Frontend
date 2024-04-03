@@ -40,7 +40,7 @@ function App() {
   return (
     <>
       <header>
-        <h1>Shelf-a-Warehouse</h1>
+        <h1>Shelf-A-Warehouse</h1>
         <h3>Fully aware of all your stocking needs!</h3>
       </header>
       
