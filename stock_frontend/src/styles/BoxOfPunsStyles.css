@@ -1,0 +1,57 @@
+#pun-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    margin-right: 0px;
+    margin-left: 80px;
+}
+
+#pun-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pun-boximg{
+    height: 120px;
+    margin-right: 0px;
+
+}
+
+#pun-container button {
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+
+    cursor: grab;
+    border: none;
+    background-color: rgb(255, 255, 255,0.001);
+    
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+}
+
+#pun-container p{
+    align-self: flex-end;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translateX(-1px);
+   }
+    20%, 80% {
+      transform: translateX(2px);
+   }
+    30%, 50%, 70% {
+      transform: translateX(-4px);
+   }
+    40%, 60% {
+      transform: translateX(4px);
+   }
+  }
+  
+  .shake-animation {
+   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  }
