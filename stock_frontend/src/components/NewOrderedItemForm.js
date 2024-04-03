@@ -1,10 +1,20 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+
+import item1 from "../assets/itemAssets/1.jpeg";
+import item2 from "../assets/itemAssets/2.jpg";
+import item3 from "../assets/itemAssets/3.jpeg";
+import item4 from "../assets/itemAssets/4.jpeg";
+import item5 from "../assets/itemAssets/5.jpeg";
+import item6 from "../assets/itemAssets/6.jpeg";
+import item7 from "../assets/itemAssets/7.jpeg";
+import item8 from "../assets/itemAssets/8.jpg";
 
 const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId, orderPlaced, setOrderPlaced} ) => {
 
     // Using a map because it does not allow key duplicates, so we can update quantity dynamically
     const [orderItemsMap, setOrderItemsMap] = useState(new Map());
+
+    const images = [item1, item2, item3, item4, item5, item6, item7, item8]
 
     const renderItems = items.map(item =>{
 
@@ -19,6 +29,7 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId, orderPlaced, s
 
         return (
             <div key={item.id} className="ordered-item-form">
+                <img src={images[item.id - 1]} alt={item.name}/>
                 <p>{item.name}</p>
                 <form>
                     <input type="number" 
@@ -42,6 +53,7 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId, orderPlaced, s
         event.preventDefault();
         
         postAllOrderedItems();
+        alert("Order recorded, please do not try to place it again");
         setOrderPlaced(true);
 
         setTimeout(() => {
