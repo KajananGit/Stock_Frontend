@@ -1,4 +1,5 @@
-<h1 align="center" id="title">Title will go here</h1>
+<h1 align="center" id="title">Shelf-A-Warehouse 
+</h1>
 
 ## Table of Contents
 
@@ -8,6 +9,14 @@
 **The names and versions of any libraries used:**
 
 ### MVP
+- Create a landing page with navigation routes.
+- Create a navigation bar and display it on each page.
+- Create a page for a creating a new order with ordered items.
+- Create a page to display all orders.
+- Functionality to create a new order that is stored in the database.
+- Add delete functionality for an order on the display orders page.
+- Add CSS styling to the pages.
+
 
 ### Extensions
 
