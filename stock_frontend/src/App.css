@@ -28,18 +28,23 @@ header {
     top: 1000px;
   }
   
-  footer p {
+  .footer-links {
+    display: flex; 
+    justify-content: center; 
+  }
+  
+  .footer-links p {
     margin: 5px;
   }
   
-  footer a {
+  .footer-links a {
     color: #E0E0CE;
     text-decoration: none;
+    margin: 0 10px; 
   }
   
-  footer a:hover {
+  .footer-links a:hover {
     text-decoration: underline;
   }
-  
 
   
