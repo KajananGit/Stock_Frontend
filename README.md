@@ -5,8 +5,13 @@
 
 
 ## Project Description
+This project utilised Javascript, React, HTML and CSS to build a frontend for supermarket stock management database. 
+This frontend builds on a backend API for a fictional warehouse which contains stock batches of particular items. Products in stock can be chosen and sorted into a list of ordered items, that is then added to an order placed by a supermarket.
 
-**The names and versions of any libraries used:**
+
+![JavaScript](https://img.shields.io/badge/javascript-grey?logo=javascript)
+
+
 
 ### MVP
 - Create a landing page with navigation routes.
@@ -19,6 +24,13 @@
 
 
 ### Extensions
+-
+-
+-
+-
+-
+-
+-
 
 ### Diagrams will go here
 
