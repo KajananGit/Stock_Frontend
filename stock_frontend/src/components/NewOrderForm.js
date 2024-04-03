@@ -7,13 +7,15 @@ const NewOrderForm = ({supermarkets, postNewOrder, supermarketId, setSupermarket
     
     const handleSubmit = (event) => {
         event.preventDefault();
-        postNewOrder(supermarketId);
-        
+        if (!supermarketId) {
+            return alert("Please select a supermarket.")
+        }
+        postNewOrder(supermarketId); 
     }
 
     return ( 
         <>
-            <form>
+            <form id="new-order-form">
                 <label htmlFor="supermarket-name">Select Supermarket:</label>
                 <select
                     id="supermarket-name"

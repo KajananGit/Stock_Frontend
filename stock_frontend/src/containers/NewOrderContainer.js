@@ -66,7 +66,7 @@ const NewOrderContainer = () => {
     }, []);
 
     return ( 
-        <section className="new-order-form">
+        <section id="new-order-form-container">
             <NewOrderForm 
                 supermarkets={supermarkets} 
                 supermarketId = {supermarketId} 

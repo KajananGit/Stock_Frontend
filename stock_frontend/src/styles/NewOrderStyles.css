@@ -1,10 +1,31 @@
-.new-order-form {
+#new-order-form-container {
     margin-left: 10px;
     color: #373F51;
 }
 
-.new-order-form form {
+#new-order-form {
     width: 425px;
     display: flex;
     justify-content: space-between;
+}
+
+#ordered-item-form-container {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ordered-item-form {
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    border-color: #AD343E;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.ordered-item-form form input {
+    width: 100px;
 }
