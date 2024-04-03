@@ -66,8 +66,17 @@ const NewOrderContainer = () => {
 
     return ( 
         <>
-        <NewOrderForm supermarkets={supermarkets} supermarketId = {supermarketId} setSupermarketId={setSupermarketId} postNewOrder={postNewOrder} />
-        <NewOrderedItemForm items = {items} postOrderedItem={postOrderedItem} newOrderId={newOrderId}/>
+            <NewOrderForm 
+                supermarkets={supermarkets} 
+                supermarketId = {supermarketId} 
+                setSupermarketId={setSupermarketId} 
+                postNewOrder={postNewOrder} 
+            />
+            <NewOrderedItemForm 
+                items = {items} 
+                postOrderedItem={postOrderedItem} 
+                newOrderId={newOrderId}
+            />
         </>
     );
 }

@@ -39,8 +39,11 @@ function App() {
 
   return (
     <>
-      <h1>Shelf-a-Warehouse</h1>
-      <h3>Fully aware of all your stocking needs!</h3>
+      <header>
+        <h1>Shelf-a-Warehouse</h1>
+        <h3>Fully aware of all your stocking needs!</h3>
+      </header>
+      
       <RouterProvider router={warehouseRoutes} />
     </>
   );
