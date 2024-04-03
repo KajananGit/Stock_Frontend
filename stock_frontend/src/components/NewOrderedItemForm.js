@@ -17,7 +17,7 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId} ) => {
         }
 
         return (
-            <>
+            <div key={item.id}>
                 <p>{item.name}</p>
                 <form>
                     <input type="number" 
@@ -27,7 +27,7 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId} ) => {
                            name = {item.id}
                            onChange={(event)=> handleChange(event)}  />
                 </form>
-            </>
+            </div>
         )
     }
     )
