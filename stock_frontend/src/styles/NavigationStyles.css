@@ -1,1 +1,28 @@
-dgb
+.navbar {
+    margin-bottom: 30px;;
+}
+
+.navbar button {
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #136FA4;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    margin-left: 10px;
+    color: white;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24),0 12px 20px 0 rgba(0,0,0,0.19);
+    
+}
+
+.navbar button:hover {
+    color: #E0E0CE;
+    background-color: #0F5680;
+}
+
+.navbar button:active {
+    transform: translateY(4px);
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24);
+}
+

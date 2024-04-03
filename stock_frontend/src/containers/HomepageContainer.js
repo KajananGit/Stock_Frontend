@@ -5,8 +5,6 @@ const HomepageContainer = () => {
     
     return ( 
         <>
-
-            <h1>HELLOOO I AM HomepageContainer</h1>
             <Navigation />
         </>
 
