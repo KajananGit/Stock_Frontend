@@ -39,15 +39,27 @@ function App() {
     }
   ]);
 
+  const handleFooterClick = () => {
+    alert("Blame the backend!");
+};
+
   return (
     <>
       <header>
         <img src={logo} alt='logo'/>
-        <div className='audio'><AudioPlayer /></div>
+ 
         
       </header>
-      
+
+
       <RouterProvider router={warehouseRoutes} />
+      <footer>
+                <p>© 2024 Shelf-A-Warehouse</p>
+                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"onClick={handleFooterClick}>Privacy</a></p>
+                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"onClick={handleFooterClick}>T&Cs</a></p>
+                <div className='audio'><AudioPlayer /></div>
+      </footer>
+
       
     </>
   );
