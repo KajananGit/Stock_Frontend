@@ -1,4 +1,5 @@
 import OrderedItem from "./OrderedItem";
+import OrderStyles from "../styles/OrderStyles.css";
 
 const Order = ({ order, orderedItems, deleteOrder }) => {
 
@@ -12,12 +13,16 @@ const Order = ({ order, orderedItems, deleteOrder }) => {
 
     return (
         <>
-            <h3>Order ID: {order.id}</h3>
-            <p>Order status: {order.orderStatus}</p>
-            <p>Supermarket: {order.supermarket.name}, {order.supermarket.location}</p>
-            <h4>Items ordered:</h4>
-            <ul>{mappedItems}</ul>
-            <button onClick={handleDeleteButton}>Delete</button>
+        <main>
+            <section className="order-display">
+                <h3>Order ID: {order.id}</h3>
+                <p>Order status: {order.orderStatus}</p>
+                <p>Supermarket: {order.supermarket.name}, {order.supermarket.location}</p>
+                <h4>Items ordered:</h4>
+                <ul>{mappedItems}</ul>
+                <button className="deleteButton" onClick={handleDeleteButton}>Delete</button>
+            </section>
+        </main>
         </>
     );
 }
