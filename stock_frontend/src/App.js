@@ -6,7 +6,8 @@ import HomepageContainer from './containers/HomepageContainer';
 import Navigation from './components/Navigation';
 import NewOrderedItemForm from './components/NewOrderedItemForm';
 import NewOrderContainer from './containers/NewOrderContainer';
-import logo from "./assets/logos/logo-horizontal.png";
+import logo from "./assets/logos/logo-horizontal.jpg";
+import AudioPlayer from './AudioPlayer';
 
 
 function App() {
@@ -38,13 +39,27 @@ function App() {
     }
   ]);
 
+  const handleFooterClick = () => {
+    alert("Blame the backend!");
+};
+
   return (
     <>
       <header>
-        <img src={logo} alt='logo'/>
+        <img src={logo} alt='Shelf a warehouse logo'/>
+        <div className='audio'><AudioPlayer /></div>
       </header>
-      
+
+
       <RouterProvider router={warehouseRoutes} />
+      <footer>
+                <p>© 2024 Shelf-A-Warehouse</p>
+                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"onClick={handleFooterClick}>Privacy</a></p>
+                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"onClick={handleFooterClick}>T&Cs</a></p>
+                <div className='audio'><AudioPlayer /></div>
+      </footer>
+
+      
     </>
   );
 }

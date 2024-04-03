@@ -1,0 +1,58 @@
+main {
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.order-display {
+   
+    text-align: center;
+    background-color: #D7D7C1;
+    padding-bottom: 15px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.order-display p{
+    padding-left: 10px;
+    text-align: left;
+}
+
+.order-display h4{
+    padding-left: 10px;
+    text-align: left;
+}
+
+.order-display ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+
+
+
+
+
+.deleteButton {
+    border: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #CB525C;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    margin-left: 10px;
+    color: white;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24),0 12px 20px 0 rgba(0,0,0,0.19);
+}
+
+.deleteButton:hover {
+    color: #E0E0CE;
+    background-color: #AD343E;
+}
+
+.deleteButton:active {
+    transform: translateY(4px);
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24);
+}

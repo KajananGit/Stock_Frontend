@@ -1,3 +1,7 @@
+body {
+  background-color: #E0E0CE;
+}
+
 header {
   padding-top: 5px;
   padding-bottom: 2px;
@@ -5,3 +9,37 @@ header {
   background-color: #373F51;
   color: #E0E0CE;
 }
+
+
+.footer .audio {
+    position: absolute; 
+    top: 50px;
+    right: 10px; 
+    border-radius: 20px; 
+    border: transparent; 
+    padding: 5px 10px; 
+  }
+
+  footer {
+    background-color: #373F51;
+    color: #E0E0CE;
+    padding: 10px;
+    text-align: center;
+    top: 1000px;
+  }
+  
+  footer p {
+    margin: 5px;
+  }
+  
+  footer a {
+    color: #E0E0CE;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+
+  
