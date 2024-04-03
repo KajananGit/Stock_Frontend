@@ -6,7 +6,7 @@ import HomepageContainer from './containers/HomepageContainer';
 import Navigation from './components/Navigation';
 import NewOrderedItemForm from './components/NewOrderedItemForm';
 import NewOrderContainer from './containers/NewOrderContainer';
-import "./assets/logos/logo-horizontal.png";
+import logo from "./assets/logos/logo-horizontal.png";
 
 
 function App() {
@@ -41,7 +41,7 @@ function App() {
   return (
     <>
       <header>
-        <img src='./assets/logos/logo-horizontal.png' alt='logo'/>
+        <img src={logo} alt='logo'/>
       </header>
       
       <RouterProvider router={warehouseRoutes} />
