@@ -17,10 +17,10 @@
     border-style: none;
     transition: 0.4s;
     cursor: pointer;
-}
 
-#new-order-form-container button:hover {
-    background-color: #F6C665;
+    &:hover {
+        background-color: #F6C665;
+    }
 }
 
 #new-order-form-container button span{
@@ -54,9 +54,9 @@
 
 .ordered-item-form {
     width: 20%;
+    height: 100px;
     margin: 10px;
     padding: 10px;
-    color: black;
     border-color: #AD343E;
     border-style: solid;
     border-radius: 15px;
@@ -64,4 +64,9 @@
 
 .ordered-item-form form input {
     width: 100px;
+}
+
+#place-order {
+    margin-right: 30px;
+    float: right;
 }
