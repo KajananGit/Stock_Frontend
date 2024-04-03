@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId} ) => {
+const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId, orderPlaced, setOrderPlaced} ) => {
 
     // Using a map because it does not allow key duplicates, so we can update quantity dynamically
     const [orderItemsMap, setOrderItemsMap] = useState(new Map());
@@ -41,7 +42,13 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId} ) => {
         event.preventDefault();
         
         postAllOrderedItems();
+        setOrderPlaced(true);
+
+        setTimeout(() => {
+            setOrderPlaced(false);
+        }, 2000)
     }
+
 
     // Iterate through the orderItemsMap
     const postAllOrderedItems = () => orderItemsMap.forEach ((value, key) => {
@@ -77,9 +84,10 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId} ) => {
             <h3>Add items to order:</h3>
             <section id="ordered-item-form-container">
                 {/* Conditional rendering only if newOrderId is not null */}
-                {newOrderId&&renderItems}
+                {newOrderId && renderItems}
             </section>
-            {newOrderId&&<button id="place-order" onClick={handleSubmit}><span>Place Order</span></button>}            
+            {newOrderId && <button id="place-order" onClick={handleSubmit}><span>Place Order</span></button>} 
+            {orderPlaced && <p className="order-message">Order has been placed!</p>}           
         </>
      );
 }
