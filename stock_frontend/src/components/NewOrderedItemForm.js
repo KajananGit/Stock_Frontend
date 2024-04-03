@@ -9,7 +9,7 @@ import item6 from "../assets/itemAssets/6.jpeg";
 import item7 from "../assets/itemAssets/7.jpeg";
 import item8 from "../assets/itemAssets/8.jpg";
 
-const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId, orderPlaced, setOrderPlaced} ) => {
+const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId} ) => {
 
     // Using a map because it does not allow key duplicates, so we can update quantity dynamically
     const [orderItemsMap, setOrderItemsMap] = useState(new Map());
@@ -54,7 +54,6 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId, orderPlaced, s
         
         postAllOrderedItems();
         alert("Order recorded, please do not try to place it again");
-        setOrderPlaced(true);
     }
 
 
