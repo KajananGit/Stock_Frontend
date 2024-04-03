@@ -1,5 +1,9 @@
 .navbar {
     margin-bottom: 30px;
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+    margin-top: 10px;
 }
 
 .navbar button {
