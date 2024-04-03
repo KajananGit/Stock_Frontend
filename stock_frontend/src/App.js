@@ -46,9 +46,8 @@ function App() {
   return (
     <>
       <header>
-        <img src={logo} alt='logo'/>
- 
-        
+        <img src={logo} alt='Shelf a warehouse logo'/>
+        <div className='audio'><AudioPlayer /></div>
       </header>
 
 
