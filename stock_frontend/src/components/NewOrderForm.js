@@ -27,7 +27,7 @@ const NewOrderForm = ({supermarkets, postNewOrder, supermarketId, setSupermarket
                     <option disabled value="select-supermarket">Choose Supermarket</option>
                     {supermarketOptions}
                 </select>
-                <button onClick={handleSubmit}>Start New Order</button>
+                <button onClick={handleSubmit}><span>Start New Order</span></button>
             </form>
             
         </>

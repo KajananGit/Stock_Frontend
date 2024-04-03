@@ -79,7 +79,7 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId} ) => {
                 {/* Conditional rendering only if newOrderId is not null */}
                 {newOrderId&&renderItems}
             </section>
-            {newOrderId&&<button onClick={handleSubmit}>Order NOW!!!</button>}            
+            {newOrderId&&<button onClick={handleSubmit}><span>Place Order</span></button>}            
         </>
      );
 }

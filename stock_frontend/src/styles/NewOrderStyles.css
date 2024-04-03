@@ -4,9 +4,45 @@
 }
 
 #new-order-form {
-    width: 425px;
+    width: 500px;
     display: flex;
     justify-content: space-between;
+}
+
+#new-order-form-container button {
+    width: 150px;
+    height: 25px;
+    background-color: #F3B02B;
+    border-radius: 5px;
+    border-style: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#new-order-form-container button:hover {
+    background-color: #F6C665;
+}
+
+#new-order-form-container button span{
+    position: relative;
+    transition: 0.5s;
+}
+
+#new-order-form-container button:hover span{
+    padding-right: 15px;
+}
+
+#new-order-form-container button span:after{
+    content: '\00bb';
+    position: absolute;
+    right: -10px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#new-order-form-container button:hover span:after{
+    opacity: 1;
+    right: 0;
 }
 
 #ordered-item-form-container {
