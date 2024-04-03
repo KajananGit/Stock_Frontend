@@ -1,0 +1,10 @@
+.new-order-form {
+    margin-left: 10px;
+    color: #373F51;
+}
+
+.new-order-form form {
+    width: 425px;
+    display: flex;
+    justify-content: space-between;
+}

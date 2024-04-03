@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 const NewOrderForm = ({supermarkets, postNewOrder, supermarketId, setSupermarketId}) => {
     
 
