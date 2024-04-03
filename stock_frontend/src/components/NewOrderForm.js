@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 const NewOrderForm = ({supermarkets, postNewOrder, supermarketId, setSupermarketId}) => {
     
 
@@ -9,13 +7,15 @@ const NewOrderForm = ({supermarkets, postNewOrder, supermarketId, setSupermarket
     
     const handleSubmit = (event) => {
         event.preventDefault();
-        postNewOrder(supermarketId);
-        
+        if (!supermarketId) {
+            return alert("Please select a supermarket.")
+        }
+        postNewOrder(supermarketId); 
     }
 
     return ( 
         <>
-            <form>
+            <form id="new-order-form">
                 <label htmlFor="supermarket-name">Select Supermarket:</label>
                 <select
                     id="supermarket-name"
@@ -27,7 +27,7 @@ const NewOrderForm = ({supermarkets, postNewOrder, supermarketId, setSupermarket
                     <option disabled value="select-supermarket">Choose Supermarket</option>
                     {supermarketOptions}
                 </select>
-                <button onClick={handleSubmit}>Start New Order</button>
+                <button onClick={handleSubmit}><span>Start New Order</span></button>
             </form>
             
         </>

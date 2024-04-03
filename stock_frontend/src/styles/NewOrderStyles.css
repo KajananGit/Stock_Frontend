@@ -1,0 +1,84 @@
+body {
+    background-color: #E7E7DA;
+}
+
+#new-order-form-container {
+    margin-left: 10px;
+    color: #373F51;
+}
+
+#new-order-form {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#new-order-form-container button {
+    width: 150px;
+    height: 25px;
+    background-color: #F3B02B;
+    border-radius: 5px;
+    border-style: none;
+    transition: 0.4s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #F6C665;
+    }
+}
+
+#new-order-form-container button span{
+    position: relative;
+    transition: 0.5s;
+}
+
+#new-order-form-container button:hover span{
+    padding-right: 15px;
+}
+
+#new-order-form-container button span:after{
+    content: '\00bb';
+    position: absolute;
+    right: -10px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#new-order-form-container button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+#ordered-item-form-container {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ordered-item-form {
+    width: 20%;
+    height: 150px;
+    margin: 10px;
+    padding-bottom: 15px;
+    align-content: center;
+    text-align: center;
+    color: #111318;
+    border-color: #0F5680;
+    background-color: #6DBFEE;
+    border-style: solid;
+    border-radius: 15px;
+    box-shadow: 7px 7px 2px 1px #373F51;
+}
+
+.ordered-item-form form input {
+    width: 100px;
+    color: #E0E0CE;
+    background-color: #373F51;
+    
+}
+
+#place-order {
+    margin-right: 30px;
+    float: right;
+}

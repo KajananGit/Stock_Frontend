@@ -17,7 +17,7 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId} ) => {
         }
 
         return (
-            <div key={item.id}>
+            <div key={item.id} className="ordered-item-form">
                 <p>{item.name}</p>
                 <form>
                     <input type="number" 
@@ -74,10 +74,12 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId} ) => {
     
     return ( 
         <>
-        <h3>Add items to order:</h3>
-        {/* Conditional rendering only if newOrderId is not null */}
-        {newOrderId&&renderItems}
-        {newOrderId&&<button onClick={handleSubmit}>Order NOW!!!</button>}
+            <h3>Add items to order:</h3>
+            <section id="ordered-item-form-container">
+                {/* Conditional rendering only if newOrderId is not null */}
+                {newOrderId&&renderItems}
+            </section>
+            {newOrderId&&<button id="place-order" onClick={handleSubmit}><span>Place Order</span></button>}            
         </>
      );
 }

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 
 import NewOrderForm from "../components/NewOrderForm";
 import NewOrderedItemForm from "../components/NewOrderedItemForm";
+import NewOrderStyles from "../styles/NewOrderStyles.css";
 
 const NewOrderContainer = () => {
 
@@ -65,7 +66,7 @@ const NewOrderContainer = () => {
     }, []);
 
     return ( 
-        <>
+        <section id="new-order-form-container">
             <NewOrderForm 
                 supermarkets={supermarkets} 
                 supermarketId = {supermarketId} 
@@ -77,7 +78,7 @@ const NewOrderContainer = () => {
                 postOrderedItem={postOrderedItem} 
                 newOrderId={newOrderId}
             />
-        </>
+        </section>
     );
 }
  
