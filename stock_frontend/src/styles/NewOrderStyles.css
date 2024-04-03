@@ -1,3 +1,7 @@
+body {
+    background-color: #E7E7DA;
+}
+
 #new-order-form-container {
     margin-left: 10px;
     color: #373F51;
@@ -54,16 +58,24 @@
 
 .ordered-item-form {
     width: 20%;
-    height: 100px;
+    height: 150px;
     margin: 10px;
-    padding: 10px;
-    border-color: #AD343E;
+    padding-bottom: 15px;
+    align-content: center;
+    text-align: center;
+    color: #111318;
+    border-color: #0F5680;
+    background-color: #6DBFEE;
     border-style: solid;
     border-radius: 15px;
+    box-shadow: 7px 7px 2px 1px #373F51;
 }
 
 .ordered-item-form form input {
     width: 100px;
+    color: #E0E0CE;
+    background-color: #373F51;
+    
 }
 
 #place-order {
