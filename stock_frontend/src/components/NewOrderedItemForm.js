@@ -17,7 +17,7 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId} ) => {
         }
 
         return (
-            <>
+            <div key={item.id}>
                 <p>{item.name}</p>
                 <form>
                     <input type="number" 
@@ -27,7 +27,7 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId} ) => {
                            name = {item.id}
                            onChange={(event)=> handleChange(event)}  />
                 </form>
-            </>
+            </div>
         )
     }
     )
@@ -59,12 +59,12 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId} ) => {
             // If ordered amount is more than the current stock quantity, post request with the smaller value
             let passedQuantity = Math.min(leftQuantity,currentStocks[idx].quantity);
             
-            postOrderedItem(currentStocks[idx].id, passedQuantity);
-            leftQuantity -= currentStocks[idx].quantity;
-            // Break when the order quantity has been fulfilled
             if (leftQuantity <= 0){
                 break
             }
+            postOrderedItem(currentStocks[idx].id, passedQuantity);
+            leftQuantity -= currentStocks[idx].quantity;
+            // Break when the order quantity has been fulfilled
         }
         // Reset state
         setOrderItemsMap(new Map());
