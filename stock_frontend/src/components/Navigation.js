@@ -7,7 +7,7 @@ const Navigation = () => {
     return (
         <>
             <section className="navbar">
-                <button onClick= {() => navigate("/home")}>Home</button> 
+                <button id="home-button" onClick= {() => navigate("/home")}>Home</button> 
                 <button onClick= {() => navigate("/orders")}>View Current Orders</button> 
                 <button onClick= {() => navigate("/orders/new")}>Add New Order</button> 
             </section>
