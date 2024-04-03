@@ -13,7 +13,7 @@ header {
 
 header .audio {
     position: absolute; 
-    top: 100px;
+    top: 50px;
     right: 10px; 
     border-radius: 20px; 
     border: transparent; 
