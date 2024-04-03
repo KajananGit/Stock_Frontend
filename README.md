@@ -7,7 +7,7 @@
 2. [Installation instructions](#installation-instructions)
 3. [Usage](#usage)
 4. [Contributing Instructions](#contributing-instructions)
-5. [Credits and Acknowledgements](credits-and-acknowledgements)
+5. [Credits and Acknowledgements](#credits-and-acknowledgements)
 6. [Licences](#licences)
 
 
