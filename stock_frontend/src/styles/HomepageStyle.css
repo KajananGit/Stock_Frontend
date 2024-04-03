@@ -1,0 +1,30 @@
+.homepage {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #373F51;
+    padding-top: 100px;
+    padding-bottom: 1000px;
+}
+
+.homepage img {
+    max-width: fit-content;
+    
+}
+
+.homepage-nav button{
+    display: flex;
+    justify-content: space-around;
+    margin: inherit;
+    width: 500px;
+    height: 130px;
+    border-radius: 20px;
+    font-size: xx-large;
+    font-weight: bold;
+    align-items: center;
+    background-color: #c29a4b;
+    outline-color: white;
+    outline-style: solid;
+}
+
+
+
