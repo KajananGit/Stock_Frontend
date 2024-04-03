@@ -94,8 +94,7 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId, orderPlaced, s
                 {/* Conditional rendering only if newOrderId is not null */}
                 {newOrderId && renderItems}
             </section>
-            {newOrderId && <button id="place-order" onClick={handleSubmit}><span>Place Order</span></button>} 
-            {orderPlaced && <p className="order-message">Order has been placed!</p>}           
+            {newOrderId && <button id="place-order" onClick={handleSubmit}><span>Place Order</span></button>}         
         </>
      );
 }
