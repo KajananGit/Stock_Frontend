@@ -6,7 +6,7 @@ import HomepageContainer from './containers/HomepageContainer';
 import Navigation from './components/Navigation';
 import NewOrderedItemForm from './components/NewOrderedItemForm';
 import NewOrderContainer from './containers/NewOrderContainer';
-import logo from "./assets/logos/logo-horizontal.png";
+import logo from "./assets/logos/logo-horizontal.jpg";
 import AudioPlayer from './AudioPlayer';
 
 
