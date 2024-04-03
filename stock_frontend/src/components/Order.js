@@ -21,6 +21,7 @@ const Order = ({ order, orderedItems, deleteOrder }) => {
                 <h4>Items ordered:</h4>
                 <ul>{mappedItems}</ul>
                 <button className="deleteButton" onClick={handleDeleteButton}>Delete</button>
+                <button className="editButton" onClick={handleDeleteButton}>Edit</button>
             </section>
         </main>
         </>
