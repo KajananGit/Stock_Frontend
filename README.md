@@ -1,4 +1,5 @@
-<h1 align="center" id="title">Shelf-A-Warehouse 
+![logo-vertical](https://github.com/KajananGit/Stock_Frontend/assets/92640386/9f5b6ba0-5a55-4ded-807f-0fdc30f5fd51)
+
 </h1>
 
 ## Table of Contents
