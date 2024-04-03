@@ -3,6 +3,12 @@
 </h1>
 
 ## Table of Contents
+1. [Project Description](#project-description)
+2. [Installation instructions](#installation-instructions)
+3. [Usage](#usage)
+4. [Contributing Instructions](#contributing-instructions)
+5. [Credits and Acknowledgements](credits-and-acknowledgements)
+6. [Licences](#licences)
 
 
 ## Project Description
@@ -37,7 +43,7 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 
 ## Installation instructions
 
-## Usage and images of the frontend
+## Usage
 
 ## Contributing Instructions
 Find below our contributing guidelines. By following these guidelines, you'll help us to maintain a high quality codebase and make the review process smoother for everyone.
