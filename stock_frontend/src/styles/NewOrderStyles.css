@@ -82,3 +82,11 @@ body {
     margin-right: 30px;
     float: right;
 }
+
+.order-message {
+    display: flex;
+    justify-content: end;
+    margin-right: 200px;
+    font-style: italic;
+    font-weight: bold;
+}

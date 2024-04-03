@@ -13,6 +13,7 @@ const NewOrderContainer = () => {
     // For NewOrderedItemForm
     const [items, setItems] = useState([]);
     const [newOrderId, setNewOrderId] = useState(null);
+    const [orderPlaced, setOrderPlaced] = useState(false);
 
     // Fetching Data
     const loadSupermarketsData = () => {
@@ -77,6 +78,8 @@ const NewOrderContainer = () => {
                 items = {items} 
                 postOrderedItem={postOrderedItem} 
                 newOrderId={newOrderId}
+                orderPlaced={orderPlaced}
+                setOrderPlaced={setOrderPlaced}
             />
         </section>
     );
