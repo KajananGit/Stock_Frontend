@@ -13,6 +13,7 @@
 
 .homepage-nav button{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     margin: inherit;
     width: 500px;
