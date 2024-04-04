@@ -85,7 +85,7 @@ Find below our contributing guidelines. By following these guidelines, you'll he
 ## Credits and Acknowledgements
 - Kajanan Lingkeswaran - Github: https://github.com/KajananGit
 - Zarrin Rahman - Github: https://github.com/z-for-zarrin
-- Yabbi - Github: https://github.com/Y-Negash
+- Yeabsira Negash - Github: https://github.com/Y-Negash
 - Gabriel Dzharadat - Github: https://github.com/GJaradat
 - Marvellous Akib - Github: https://github.com/Marv3llous
 
