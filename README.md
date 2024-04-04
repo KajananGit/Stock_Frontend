@@ -65,6 +65,9 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 
 ## Usage
 **Home Page:**
+1. Acts as a Welcoming Screen. Use buttons to navigate to other pages such as the Current Orders Page & New Orders Page.
+![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/e335f629-18d7-426e-afe1-a7680fafefe0)
+
 
 **Current Orders Page:**
 
