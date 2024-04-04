@@ -6,6 +6,10 @@
     padding-bottom: 500px;
 }
 
+#logo-container{
+    position:relative;
+}
+
 #home-logo {
     max-width: fit-content;
     animation: slideInFromLeft 5s;
@@ -13,9 +17,9 @@
 
 #forklift{
     position:absolute;
-    width: 10%;
-    top: 50.3%;
-    left: 69px;
+    width: 20%;
+    top: 170px;
+    left: 45px;
     animation: slideInFromLeftForklift 6.5s;
     opacity: 0;
 }
@@ -63,7 +67,7 @@
 
   @keyframes slideInFromLeftForklift {
     0% {
-        transform: translateX(-600px);
+        transform: translateX(-610px);
         opacity: 0;
    }
     80% {

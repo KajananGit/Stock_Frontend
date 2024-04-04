@@ -18,7 +18,7 @@ const HomepageContainer = () => {
     
     return ( 
         <section className="homepage">
-            <div>
+            <div id="logo-container">
                 <img src={forklift} alt="forklift carrying in logo" id="forklift"></img>
                 <img src={logo} alt="logo" id="home-logo"></img>
             </div>
