@@ -57,7 +57,7 @@ main {
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24);
 }
 
-.editButton {
+.expandButton {
     border: none;
     font-size: 16px;
     padding: 5px 10px;
@@ -70,12 +70,12 @@ main {
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24),0 12px 20px 0 rgba(0,0,0,0.19);
 }
 
-.editButton:hover {
+.expandButton:hover {
     color: #E0E0CE;
     background-color: #0F5680;
 }
 
-.editButton:active {
+.expandButton:active {
     transform: translateY(4px);
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24);
 }
