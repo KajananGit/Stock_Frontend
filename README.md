@@ -44,7 +44,8 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 
 
 ### Prop Diagram
-![prop diagram](propDiagram.png)
+![prop-diagram](https://github.com/KajananGit/Stock_Frontend/assets/149251586/b04cd8aa-c3ad-4e5c-9dde-4313cf65b462)
+
 
 
 ## Installation instructions
