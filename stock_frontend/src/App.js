@@ -61,6 +61,7 @@ function App() {
                     <p><a href="#" onClick={() => handleFooterClick("https://www.youtube.com/watch?v=xm3YgoEiEDc")}>T&Cs</a></p>
                     <p><a href="#" onClick={() => handleFooterClick("https://www.youtube.com/watch?v=xm3YgoEiEDc")}>Accessibility</a></p>
                     <p><a href="#" onClick={() => handleFooterClick("https://www.youtube.com/watch?v=xm3YgoEiEDc")}>Contact Form</a></p>
+                    <p><a href="#" onClick={() => handleFooterClick("https://www.youtube.com/watch?v=xm3YgoEiEDc")}>Refund Policy</a></p>
                 </div>
                 <div className='audio'><AudioPlayer /></div>
       </footer>
