@@ -85,6 +85,8 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 
 
 **New Orders Page:**
+<img width="1438" alt="Screenshot 2024-04-04 at 11 57 41" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/5e79379a-11c3-465f-a804-68745fdcd86a">
+
 
 ## Contributing Instructions
 Find below our contributing guidelines. By following these guidelines, you'll help us to maintain a high quality codebase and make the review process smoother for everyone.
