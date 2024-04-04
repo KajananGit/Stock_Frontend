@@ -31,13 +31,10 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 
 
 ### Extensions
--
--
--
--
--
--
--
+- Add a button that generates warehouse themed jokes.
+- Add an audio player to the page with audio controls.
+- Add functionality to edit the order status to be in progress, out for delivery, delivered.
+- Add ability to edit orders
 
 ### Diagrams will go here
 
