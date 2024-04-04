@@ -33,7 +33,7 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 ### Extensions
 - Add a button that generates warehouse themed jokes.
 - Add an audio player to the page with audio controls.
-- Add functionality to edit the order status to be in progress, out for delivery, delivered.
+- Add functionality to edit the order status to be updated to be in progress, out for delivery, delivered.
 - Add ability to edit orders.
 - Add an expand button to see full order details on the current orders page.
 
@@ -51,7 +51,7 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 ## Installation instructions
 - In the terminal, navigate to the directory you want to copy the repository into. \
 - Run the command ```git clone git@github.com:Marv3llous/Backend_API.git```
-- Run the command **git pull** to ensure you have the latest version.
+- Run the command ```git pull``` to ensure you have the latest version.
 - Open the project in the preferred IDE such as IntelliJ.
 - In the terminal, create the database called inventory_db by running the command ```createdb inventory_db```.
 - Run the BackendProject file.
@@ -60,10 +60,10 @@ This frontend builds on a backend API for a fictional warehouse which contains s
   
 - In the terminal, navigate to the directory you want to copy the repository into. \
 - Run the command ```git clone git@github.com:KajananGit/Stock_Frontend.git```
-- Run the command **git pull** to ensure you have the latest version.
+- Run the command ```git pull``` to ensure you have the latest version.
 - Open the project in the preferred IDE such as VSCode.
-- Run the command **npm i**
-- Now the backend API is running, you can run the frontend application by entering the command **npm start** in the terminal.
+- Run the command ```npm i``` in the terminal.
+- Now the backend API is running, you can run the frontend application by entering the command ```npm start```in the terminal.
 
 
 ## Usage
