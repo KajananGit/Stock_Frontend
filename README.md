@@ -80,13 +80,16 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 ![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/497d4afa-a6eb-4fb6-8da0-1716c1481d60)
 
 4. Can view more details about an order when clicking on the 'More' button.
-![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/0077cf57-8505-4f73-86fe-15020c703775) ![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/b5ecdf55-f672-4964-9c7f-f4cdf0c09e09)
+![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/0077cf57-8505-4f73-86fe-15020c703775)
+![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/b5ecdf55-f672-4964-9c7f-f4cdf0c09e09)
 
-5. Can delete and order by clicking on the 'Delete' button.
-![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/f0166fe8-ea8e-496d-a89c-db809c363279) ![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/f647fbc3-7931-40b7-89ee-ad71e7bcdabb)
+6. Can delete and order by clicking on the 'Delete' button.
+![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/f0166fe8-ea8e-496d-a89c-db809c363279)
+![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/f647fbc3-7931-40b7-89ee-ad71e7bcdabb)
 
-6. Can update the status of an order by selecting a new status from the drop-down list.
-![Screenshot 2024-04-04 at 11 59 23](https://github.com/KajananGit/Stock_Frontend/assets/100879327/b42bc4c3-017e-4395-83b7-b1d717090823) ![Screenshot 2024-04-04 at 12 00 03](https://github.com/KajananGit/Stock_Frontend/assets/100879327/aca90922-ca8c-494d-83c6-5e1ffe6eb27f)
+7. Can update the status of an order by selecting a new status from the drop-down list.
+![Screenshot 2024-04-04 at 11 59 23](https://github.com/KajananGit/Stock_Frontend/assets/100879327/b42bc4c3-017e-4395-83b7-b1d717090823)
+![Screenshot 2024-04-04 at 12 00 03](https://github.com/KajananGit/Stock_Frontend/assets/100879327/aca90922-ca8c-494d-83c6-5e1ffe6eb27f)
 
 
 **New Orders Page:**
