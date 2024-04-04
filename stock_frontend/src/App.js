@@ -8,6 +8,7 @@ import NewOrderedItemForm from './components/NewOrderedItemForm';
 import NewOrderContainer from './containers/NewOrderContainer';
 import logo from "./assets/logos/logo-horizontal.jpg";
 import AudioPlayer from './AudioPlayer';
+import BoxOfPuns from './components/BoxOfPuns';
 
 
 function App() {
@@ -47,11 +48,11 @@ function App() {
     <>
       <header>
         <img src={logo} alt='Shelf a warehouse logo'/>
+        <BoxOfPuns/>
       </header>
 
 
       <RouterProvider router={warehouseRoutes} />
-      
       <footer>
       <div className="footer-links">
                     <p>© 2024 Shelf-A-Warehouse</p>
