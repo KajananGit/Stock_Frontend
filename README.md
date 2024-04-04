@@ -39,6 +39,18 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 ### Diagrams will go here
 
 ## Installation instructions
+- In the terminal, navigate to the directory you want to copy the repository into. \
+- Run the command ```git clone git@github.com:Marv3llous/Backend_API.git```
+- Run the command **git pull** to ensure you have the latest version.
+- Open the project in the preferred IDE such as IntelliJ.
+- In the terminal, create the database called inventory_db by running the command ```createdb inventory_db```.
+- Run the BackendProject file.
+- In the terminal, navigate to the directory you want to copy the repository into. \
+- Run the command ```git clone git@github.com:KajananGit/Stock_Frontend.git```
+- Run the command **git pull** to ensure you have the latest version.
+- Open the project in the preferred IDE such as VSCode.
+- Now the backend API is running, you can run the frontend application by entering the command **npm start** in the terminal.
+
 
 ## Usage
 
