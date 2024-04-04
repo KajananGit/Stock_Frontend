@@ -8,7 +8,7 @@ const OrderContainer = () => {
     const [orderedItems, setOrderedItems] = useState([]);
     const [searchValue, setSearchValue] = useState("");
     const [sortValue, setSortValue] = useState("");
-    const [expandStatus, setExpandStatus] = useState(false);
+    
 
     const fetchOrders = async () => {
         const response = await fetch("http://localhost:8080/orders");
@@ -58,16 +58,7 @@ const OrderContainer = () => {
         return order;
     })
 
-    const toggleExpandStatus = () => {
-        setExpandStatus((expandStatus) => !expandStatus);
-    }
-
-    const toggleButtonLabel = () => {
-        if(!expandStatus){
-            return "More"
-        }
-        return "Less"
-    }
+    
 
     return (
         <>
@@ -91,7 +82,7 @@ const OrderContainer = () => {
             </form>
            
             <OrderList orders={filteredOrders} orderedItems={orderedItems} deleteOrder={deleteOrder}
-                        patchOrder={patchOrder} expandStatus={expandStatus} toggleExpandStatus={toggleExpandStatus} toggleButtonLabel={toggleButtonLabel}/>
+                        patchOrder={patchOrder} />
         </>
       );
 }
