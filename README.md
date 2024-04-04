@@ -70,6 +70,19 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 
 
 **Current Orders Page:**
+1. Displays all the current orders.
+![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/ee92b6dc-01cb-43fb-a2a0-cdeea5ac5bac)
+
+2. Can search orders based on the client (supermarket) that has placed an order.
+![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/95f0a394-5f05-4baf-ad19-740508246294)
+
+3. Can sort orders based on the order status.
+![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/497d4afa-a6eb-4fb6-8da0-1716c1481d60)
+
+4. Can view more details about an order when clicking on the 'More' button.
+
+
+
 
 **New Orders Page:**
 
