@@ -1,23 +1,30 @@
 import OrderedItem from "./OrderedItem";
 import OrderStyles from "../styles/OrderStyles.css";
-import { useNavigate } from "react-router-dom";
 import OrderStatusEdit from "./OrderStatusEdit";
 import { useState } from "react";
 
-const Order = ({ order, orderedItems, deleteOrder, patchOrder, expandStatus, toggleExpandStatus, toggleButtonLabel }) => {
+const Order = ({ order, orderedItems, deleteOrder, patchOrder}) => {
+
+    const [expandStatus, setExpandStatus] = useState(false);
 
     const mappedItems = orderedItems.map(item => {
         return <OrderedItem orderedItem={item} key={item.id}/>
     })
 
-    const navigate = useNavigate();
 
     const handleDeleteButton = () => {
         deleteOrder(order.id);
     }
 
-    const handleExpandButton = () => {
-        toggleExpandStatus();
+    const toggleExpandStatus = () => {
+        setExpandStatus((expandStatus) => !expandStatus);
+    }
+
+    const toggleButtonLabel = () => {
+        if(!expandStatus){
+            return "More"
+        }
+        return "Less"
     }
 
     return (
@@ -31,8 +38,7 @@ const Order = ({ order, orderedItems, deleteOrder, patchOrder, expandStatus, tog
                 <ul>{mappedItems}</ul>
                 <button className="deleteButton" onClick={handleDeleteButton}>Delete</button>
                 </>}
-                <button className="expandButton" onClick={handleExpandButton}>{toggleButtonLabel()}</button>
-                {handleExpandButton}
+                <button className="expandButton" onClick={toggleExpandStatus}>{toggleButtonLabel()}</button>
 
             </section>
         </main>
