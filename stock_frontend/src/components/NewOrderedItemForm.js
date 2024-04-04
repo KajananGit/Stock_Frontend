@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import item1 from "../assets/itemAssets/1.jpeg";
 import item2 from "../assets/itemAssets/2.jpg";
@@ -14,6 +15,7 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId} ) => {
     // Using a map because it does not allow key duplicates, so we can update quantity dynamically
     const [orderItemsMap, setOrderItemsMap] = useState(new Map());
 
+    const navigate = useNavigate();
     const images = [item1, item2, item3, item4, item5, item6, item7, item8]
 
     const renderItems = items.map(item =>{
@@ -60,6 +62,7 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId} ) => {
         
         postAllOrderedItems();
         alert("Order recorded, please do not try to place it again");
+        navigate("/orders")
     }
 
 
