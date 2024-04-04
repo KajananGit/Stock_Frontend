@@ -10,9 +10,9 @@ body {
 }
 
 #new-order-form {
-    width: 1000px;
+    width: 800px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
