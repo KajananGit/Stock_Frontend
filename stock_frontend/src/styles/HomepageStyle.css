@@ -6,9 +6,24 @@
     padding-bottom: 500px;
 }
 
-.homepage img {
+#home-logo {
     max-width: fit-content;
-    
+    animation: slideInFromLeft 5s;
+}
+
+#forklift{
+    position:absolute;
+    width: 10%;
+    top: 50.3%;
+    left: 69px;
+    animation: slideInFromLeftForklift 6.5s;
+    opacity: 0;
+}
+
+.homepage-nav{
+    animation: fadeIn 2s ease-out forwards;
+    animation-delay: 5s;
+    opacity: 0;
 }
 
 .homepage-nav button{
@@ -35,3 +50,36 @@
     display: none;
 }
 
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-80%);
+        opacity: 0;
+   }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+   }
+  }
+
+  @keyframes slideInFromLeftForklift {
+    0% {
+        transform: translateX(-600px);
+        opacity: 0;
+   }
+    80% {
+        transform: translateX(0);
+        opacity: 1;
+   }
+    100% {
+        opacity: 0;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+   }
+    100% {
+      opacity: 1;
+   }
+  }

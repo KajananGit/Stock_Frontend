@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Navigation from "../components/Navigation";
 import HomepageStyle from "../styles/HomepageStyle.css";
 import logo from "../assets/logos/logo-vertical.png";
+import forklift from "../assets/forklift.png"
 
 const HomepageContainer = () => {
     
@@ -17,7 +18,10 @@ const HomepageContainer = () => {
     
     return ( 
         <section className="homepage">
-            <img src={logo} alt="logo"></img>
+            <div>
+                <img src={forklift} alt="forklift carrying in logo" id="forklift"></img>
+                <img src={logo} alt="logo" id="home-logo"></img>
+            </div>
             <section className="homepage-nav"><Navigation /></section>
         </section>
 
