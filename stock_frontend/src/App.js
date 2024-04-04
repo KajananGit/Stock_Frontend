@@ -44,10 +44,15 @@ function App() {
     }
   ]);
 
-  const handleFooterClick = (linkUrl) => {
-    alert("BLAME THE BACKEND!")
-    window.open(linkUrl, "_blank"); // Open the image in a new tab
-  };
+  const handleFooterClick = (url) => {
+    alert("BLAME THE BACKEND!");
+    if (url) {
+      setTimeout(() => {
+        window.open(url, "_blank");
+      }, 100);
+    }
+  }
+  
 
   return (
     <>
@@ -59,13 +64,13 @@ function App() {
 
       <RouterProvider router={warehouseRoutes} />
       <footer>
-      <div className="footer-links">
+                <div className="footer-links">
                     <p>© 2024 Shelf-A-Warehouse</p>
-                    <p><a href="#" onClick={() => handleFooterClick("https://www.youtube.com/watch?v=xm3YgoEiEDc")}>Privacy</a></p>
-                    <p><a href="#" onClick={() => handleFooterClick("https://www.youtube.com/watch?v=xm3YgoEiEDc")}>T&Cs</a></p>
-                    <p><a href="#" onClick={() => handleFooterClick("https://www.youtube.com/watch?v=xm3YgoEiEDc")}>Accessibility</a></p>
-                    <p><a href="#" onClick={() => handleFooterClick("https://www.youtube.com/watch?v=xm3YgoEiEDc")}>Contact Form</a></p>
-                    <p><a href="#" onClick={() => handleFooterClick("https://www.youtube.com/watch?v=xm3YgoEiEDc")}>Refund Policy</a></p>
+                    <p><a href="#" onClick={() => handleFooterClick("/Voicy_rick astley.mp4")}>Privacy</a></p>
+                    <p><a href="#" onClick={() => handleFooterClick("/Voicy_rick astley.mp4")}>T&Cs</a></p>
+                    <p><a href="#" onClick={() => handleFooterClick("/Voicy_rick astley.mp4")}>Accessibility</a></p>
+                    <p><a href="#" onClick={() => handleFooterClick("/Voicy_rick astley.mp4")}>Contact Form</a></p>
+                    <p><a href="#" onClick={() => handleFooterClick("/Voicy_rick astley.mp4")}>Refund Policy</a></p>
                 </div>
                 <div className='audio'><AudioPlayer /></div>
       </footer>
