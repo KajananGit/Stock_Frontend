@@ -30,6 +30,12 @@ const OrderContainer = () => {
     const deleteOrder = async (orderId) => {
         // const orderedItemsToRemove = orderedItems.filter(orderedItem => orderedItem.order.id === orderId);
         // orderedItemsToRemove.forAll(orderedItem => orderedItem.orderQuantity = 0);
+        orderedItems.forEach(async orderedItem => {
+            console.log(orderedItem)
+            if (orderedItem.order.id === orderId) {
+                await putBackOrderedItems(orderedItem.id)
+            }
+        })
         await fetch(`http://localhost:8080/orders/${orderId}`, {
             method: "DELETE",
             headers: {"Content-Type": "application/json"}
@@ -58,7 +64,18 @@ const OrderContainer = () => {
         return order;
     })
 
-    
+
+    const putBackOrderedItems = async (orderedItemId) => {
+        const response = await fetch(`http://localhost:8080/ordered-items/${orderedItemId}`, {
+            method: "PATCH",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({
+                "orderQuantity" : 0
+            })
+        });
+        await fetchOrderedItems();
+        console.log(response);
+    }
 
     return (
         <>
