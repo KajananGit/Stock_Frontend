@@ -61,8 +61,6 @@ function App() {
                 </div>
                 <div className='audio'><AudioPlayer /></div>
       </footer>
-
-
       
     </>
   );
