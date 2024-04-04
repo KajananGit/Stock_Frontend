@@ -64,6 +64,11 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 
 
 ## Usage
+**Home Page:**
+
+**Current Orders Page:**
+
+**New Orders Page:**
 
 ## Contributing Instructions
 Find below our contributing guidelines. By following these guidelines, you'll help us to maintain a high quality codebase and make the review process smoother for everyone.
