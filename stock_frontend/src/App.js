@@ -40,9 +40,10 @@ function App() {
     }
   ]);
 
-  const handleFooterClick = () => {
-    alert("Blame the backend!");
-};
+  const handleFooterClick = (linkUrl) => {
+    alert("BLAME THE BACKEND!")
+    window.open(linkUrl, "_blank"); // Open the image in a new tab
+  };
 
   return (
     <>
@@ -56,8 +57,10 @@ function App() {
       <footer>
       <div className="footer-links">
                     <p>© 2024 Shelf-A-Warehouse</p>
-                    <p><a  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"onClick={handleFooterClick}>Privacy</a></p>
-                    <p><a  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"onClick={handleFooterClick}>T&Cs</a></p>
+                    <p><a href="#" onClick={() => handleFooterClick("https://www.youtube.com/watch?v=xm3YgoEiEDc")}>Privacy</a></p>
+                    <p><a href="#" onClick={() => handleFooterClick("https://www.youtube.com/watch?v=xm3YgoEiEDc")}>T&Cs</a></p>
+                    <p><a href="#" onClick={() => handleFooterClick("https://www.youtube.com/watch?v=xm3YgoEiEDc")}>Accessibility</a></p>
+                    <p><a href="#" onClick={() => handleFooterClick("https://www.youtube.com/watch?v=xm3YgoEiEDc")}>Contact Form</a></p>
                 </div>
                 <div className='audio'><AudioPlayer /></div>
       </footer>
