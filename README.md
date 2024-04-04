@@ -34,9 +34,17 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 - Add a button that generates warehouse themed jokes.
 - Add an audio player to the page with audio controls.
 - Add functionality to edit the order status to be in progress, out for delivery, delivered.
-- Add ability to edit orders
+- Add ability to edit orders.
+- Add an expand button to see full order details on the current orders page.
 
-### Diagrams will go here
+### Wireframe 
+<img width="485" alt="Screenshot 2024-04-04 at 10 12 57" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/d686b569-e0c2-4af9-b641-744fe5c374e9">
+
+
+### Prop Diagram
+<img width="1134" alt="Screenshot 2024-04-04 at 10 11 54" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/87b148c9-b6f5-4ff2-88af-e7c41744d442">
+
+
 
 ## Installation instructions
 - In the terminal, navigate to the directory you want to copy the repository into. \
