@@ -122,3 +122,16 @@ body {
     font-style: italic;
     font-weight: bold;
 }
+
+.out-of-stock {
+    background-color: #ccc; 
+    color: black; 
+}
+
+.out-of-stock img{
+    opacity: 0.25;
+}
+
+.out-of-stock-text{
+    position: absolute;
+}

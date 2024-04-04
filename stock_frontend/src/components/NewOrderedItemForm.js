@@ -27,22 +27,28 @@ const NewOrderedItemForm = ( {items, postOrderedItem, newOrderId} ) => {
         return sumQuantity;
         }
 
+        // check if the item is out of stock
+        const isOutOfStock = maxQuantity() === 0;
+
         return (
-            <div key={item.id} className="ordered-item-form">
+            <div key={item.id} className={`ordered-item-form ${isOutOfStock ? 'out-of-stock' : ''}`}>
                 <img src={images[item.id - 1]} alt={item.name}/>
                 <p>{item.name}</p>
-                <form>
-                    <input type="number" 
-                           placeholder="Enter Quantity.." 
-                           min = {0}
-                           max = {maxQuantity()}
-                           name = {item.id}
-                           onChange={(event)=> handleChange(event)}  />
-                </form>
+                {isOutOfStock ? (
+                    <p className="out-of-stock-text">Out of stock</p>
+                ) : (
+                    <form>
+                        <input type="number" 
+                               placeholder="Enter Quantity.." 
+                               min={0}
+                               max={maxQuantity()}
+                               name={item.id}
+                               onChange={(event) => handleChange(event)} />
+                    </form>
+                )}
             </div>
         )
-    }
-    )
+    })
     
     const handleChange = (event) => {
         // Whenever a quantity has been entered for an item, update the {itemId : quantity} pair
