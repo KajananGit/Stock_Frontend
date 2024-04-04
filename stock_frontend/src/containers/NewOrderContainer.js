@@ -57,7 +57,6 @@ const NewOrderContainer = () => {
                 "orderQuantity" : quantity
                 })
         })
-        console.log(response);
     }
     
     useEffect(() => {
