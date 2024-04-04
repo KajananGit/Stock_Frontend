@@ -55,6 +55,9 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 - Open the project in the preferred IDE such as IntelliJ.
 - In the terminal, create the database called inventory_db by running the command ```createdb inventory_db```.
 - Run the BackendProject file.
+
+<hr>
+  
 - In the terminal, navigate to the directory you want to copy the repository into. \
 - Run the command ```git clone git@github.com:KajananGit/Stock_Frontend.git```
 - Run the command **git pull** to ensure you have the latest version.
