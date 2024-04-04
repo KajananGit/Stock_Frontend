@@ -47,12 +47,6 @@ const OrderContainer = () => {
         await fetchOrders();
     }
 
-    const orderLoader = ({ params }) => {
-        return orders.find(order => {
-            return order.id === parseInt(params.id);
-        });
-    }
-
     const filteredOrders = orders.filter((order) => {
         if(searchValue){
             return order.supermarket.name.toLowerCase().includes(searchValue.toLocaleLowerCase());
@@ -74,9 +68,9 @@ const OrderContainer = () => {
                         <option disabled value="select-order-status">Sort by Status</option>
                         <option value="">All</option>
                         <option value="PENDING">Pending</option>
-                        <option value="In Progress">In Progress</option>
-                        <option value="Out For Delivery">Out for Delivery</option>
-                        <option value="Delivered">Delivered</option>
+                        <option value="IN_PROGRESS">In Progress</option>
+                        <option value="OUT_FOR_DELIVERY">Out for Delivery</option>
+                        <option value="DELIVERED">Delivered</option>
             </select>
             <form className="search-bar">
                 <input type="text"  
@@ -84,7 +78,8 @@ const OrderContainer = () => {
                        placeholder="Search orders by supermarket..."/>
             </form>
            
-            <OrderList orders={filteredOrders} orderedItems={orderedItems} deleteOrder={deleteOrder} />
+            <OrderList orders={filteredOrders} orderedItems={orderedItems} deleteOrder={deleteOrder}
+                        patchOrder={patchOrder} />
         </>
       );
 }

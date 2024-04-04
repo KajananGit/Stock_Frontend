@@ -1,6 +1,6 @@
 import Order from './Order';
 
-const OrderList = ({ orders, orderedItems, deleteOrder }) => {
+const OrderList = ({ orders, orderedItems, deleteOrder, patchOrder }) => {
 
     const mappedOrders = orders.map(order => {
         return <Order 
@@ -8,6 +8,7 @@ const OrderList = ({ orders, orderedItems, deleteOrder }) => {
                     order={order} 
                     orderedItems={orderedItems.filter(orderedItem => orderedItem.order.id === order.id)}
                     deleteOrder={deleteOrder}
+                    patchOrder={patchOrder}
                 />
     });
 

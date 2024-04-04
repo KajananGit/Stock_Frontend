@@ -4,7 +4,6 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import HomepageContainer from './containers/HomepageContainer';
 import Navigation from './components/Navigation';
 import OrderContainer from './containers/OrderContainer';
-import OrderEdit from './components/OrderEdit';
 import NewOrderedItemForm from './components/NewOrderedItemForm';
 import NewOrderContainer from './containers/NewOrderContainer';
 import logo from "./assets/logos/logo-horizontal.png";
@@ -25,10 +24,6 @@ function App() {
         {
           path: "/orders",
           element: <OrderContainer />
-        },
-        {
-          path: "/orders/:id/edit",
-          element: <OrderEdit />
         },
         {
           path: "/orders/new",
