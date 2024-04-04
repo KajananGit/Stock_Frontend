@@ -15,6 +15,10 @@ function App() {
 
   const warehouseRoutes = createBrowserRouter([
     {
+      path: "/",
+      element:<HomepageContainer />
+    },
+    {
       path: "/home",
       element:<HomepageContainer />
     },
