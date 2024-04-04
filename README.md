@@ -96,8 +96,14 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 
 
 **New Orders Page:**
-<img width="1438" alt="Screenshot 2024-04-04 at 11 57 41" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/5e79379a-11c3-465f-a804-68745fdcd86a">
+1. Can select a supermarket from the dropdown bar and start an order.
+<img width="749" alt="Screenshot 2024-04-04 at 13 51 21" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/5306f754-bbd3-4cfa-a15a-45ad5ae18195">
 
+2. Once a store is selected and the button is submitted, the item form is displayed and you can add items, choose quantity and add them to your order.
+<img width="721" alt="Screenshot 2024-04-04 at 13 51 38" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/374d0a1e-f3f5-4813-b8bd-75271e02211d">
+
+3. Once an order is placed you get an alert to confirm the order went through.
+<img width="442" alt="Screenshot 2024-04-04 at 13 51 51" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/d7d403ee-a2ee-4b1f-99c0-5b0a4591e982">
 
 ## Contributing Instructions
 Find below our contributing guidelines. By following these guidelines, you'll help us to maintain a high quality codebase and make the review process smoother for everyone.
