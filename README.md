@@ -96,8 +96,28 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 
 
 **New Orders Page:**
-<img width="1438" alt="Screenshot 2024-04-04 at 11 57 41" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/5e79379a-11c3-465f-a804-68745fdcd86a">
+1. Can select a supermarket from the dropdown bar and start an order.
+<img width="749" alt="Screenshot 2024-04-04 at 13 51 21" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/5306f754-bbd3-4cfa-a15a-45ad5ae18195">
 
+2. Once a store is selected and the button is submitted, the item form is displayed and you can add items, choose quantity and add them to your order.
+<img width="721" alt="Screenshot 2024-04-04 at 13 51 38" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/374d0a1e-f3f5-4813-b8bd-75271e02211d">
+
+3. Once an order is placed you get an alert to confirm the order went through.
+<img width="442" alt="Screenshot 2024-04-04 at 13 51 51" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/d7d403ee-a2ee-4b1f-99c0-5b0a4591e982">
+
+**Extensions:**
+1. Can click the box in the header to generate warehouse themed jokes.
+<img width="111" alt="Screenshot 2024-04-04 at 14 00 28" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/f1820297-9f6b-49ad-b848-0a84d027e4dd">
+
+<img width="384" alt="Screenshot 2024-04-04 at 14 00 38" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/87535df9-3a2b-4b0b-9e4c-1ca277615e05">
+
+   
+2. Can use the audio player to play music.
+<img width="307" alt="Screenshot 2024-04-04 at 14 00 52" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/525f2de4-0476-4170-ab7d-b1425b8e9835">
+
+
+3. Clickable links in the footer.
+<img width="576" alt="Screenshot 2024-04-04 at 14 00 58" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/15a4f83e-0e67-428f-b1ec-335f2e0eff1c">
 
 ## Contributing Instructions
 Find below our contributing guidelines. By following these guidelines, you'll help us to maintain a high quality codebase and make the review process smoother for everyone.
