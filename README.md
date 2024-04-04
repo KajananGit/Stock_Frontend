@@ -68,58 +68,58 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 
 ## Usage
 **Home Page:**
-1. Acts as a Welcoming Screen. Use buttons to navigate to other pages such as the Current Orders Page & New Orders Page.
+- Acts as a Welcoming Screen. Use buttons to navigate to other pages such as the Current Orders Page & New Orders Page.
 ![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/e335f629-18d7-426e-afe1-a7680fafefe0)
 
 
-**Current Orders Page:**
-1. Displays all the current orders.
+**Current Orders Page:** 
+- Displays all the current orders.
 ![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/ee92b6dc-01cb-43fb-a2a0-cdeea5ac5bac)
 
-2. Can search orders based on the client (supermarket) that has placed an order.
+- Can search orders based on the client (supermarket) that has placed an order.
 ![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/95f0a394-5f05-4baf-ad19-740508246294)
 
-3. Can sort orders based on the order status.
+- Can sort orders based on the order status.
 ![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/497d4afa-a6eb-4fb6-8da0-1716c1481d60)
 
-4. Can view more details about an order when clicking on the 'More' button.
+- Can view more details about an order when clicking on the 'More' button.
    
 ![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/0077cf57-8505-4f73-86fe-15020c703775)
 ![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/b5ecdf55-f672-4964-9c7f-f4cdf0c09e09)
 
-6. Can delete and order by clicking on the 'Delete' button.
+- Can delete and order by clicking on the 'Delete' button.
    
 ![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/f0166fe8-ea8e-496d-a89c-db809c363279)
 ![image](https://github.com/KajananGit/Stock_Frontend/assets/100879327/f647fbc3-7931-40b7-89ee-ad71e7bcdabb)
 
-8. Can update the status of an order by selecting a new status from the drop-down list.
+- Can update the status of an order by selecting a new status from the drop-down list.
    
 ![Screenshot 2024-04-04 at 11 59 23](https://github.com/KajananGit/Stock_Frontend/assets/100879327/b42bc4c3-017e-4395-83b7-b1d717090823)
 ![Screenshot 2024-04-04 at 12 00 03](https://github.com/KajananGit/Stock_Frontend/assets/100879327/aca90922-ca8c-494d-83c6-5e1ffe6eb27f)
 
 
 **New Orders Page:**
-1. Can select a supermarket from the dropdown bar and start an order.
+- Can select a supermarket from the dropdown bar and start an order.
 <img width="749" alt="Screenshot 2024-04-04 at 13 51 21" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/5306f754-bbd3-4cfa-a15a-45ad5ae18195">
 
-2. Once a store is selected and the button is submitted, the item form is displayed and you can add items, choose quantity and add them to your order.
+- Once a store is selected and the button is submitted, the item form is displayed and you can add items, choose quantity and add them to your order.
 <img width="721" alt="Screenshot 2024-04-04 at 13 51 38" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/374d0a1e-f3f5-4813-b8bd-75271e02211d">
 
-3. Once an order is placed you get an alert to confirm the order went through.
+- Once an order is placed you get an alert to confirm the order went through.
 <img width="442" alt="Screenshot 2024-04-04 at 13 51 51" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/d7d403ee-a2ee-4b1f-99c0-5b0a4591e982">
 
 **Extensions:**
-1. Can click the box in the header to generate warehouse themed jokes.
+- Can click the box in the header to generate warehouse themed jokes.
 <img width="111" alt="Screenshot 2024-04-04 at 14 00 28" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/f1820297-9f6b-49ad-b848-0a84d027e4dd">
 
 <img width="384" alt="Screenshot 2024-04-04 at 14 00 38" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/87535df9-3a2b-4b0b-9e4c-1ca277615e05">
 
    
-2. Can use the audio player to play music.
+- Can use the audio player to play music.
 <img width="307" alt="Screenshot 2024-04-04 at 14 00 52" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/525f2de4-0476-4170-ab7d-b1425b8e9835">
 
 
-3. Clickable links in the footer.
+- Clickable links in the footer.
 <img width="576" alt="Screenshot 2024-04-04 at 14 00 58" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/15a4f83e-0e67-428f-b1ec-335f2e0eff1c">
 
 ## Contributing Instructions
