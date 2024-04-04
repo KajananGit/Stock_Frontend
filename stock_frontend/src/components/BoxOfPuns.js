@@ -37,7 +37,8 @@ const BoxOfPuns = () => {
             }
             timer += 500;
         }
-        setButtonText("Another pun")
+        setButtonText("Another pun");
+        setBoxImg(closedBoxImg);
     }
 
     // Box Opening cursor animation

@@ -3,7 +3,7 @@
     justify-content: space-evenly;
     background-color: #373F51;
     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 500px;
 }
 
 #logo-container{
@@ -12,7 +12,7 @@
 
 #home-logo {
     max-width: fit-content;
-    animation: slideInFromLeft 5s;
+    animation: slideInFromLeft 3s;
 }
 
 #forklift{
@@ -20,13 +20,13 @@
     width: 20%;
     top: 170px;
     left: 45px;
-    animation: slideInFromLeftForklift 6.5s;
+    animation: slideInFromLeftForklift 3.85s;
     opacity: 0;
 }
 
 .homepage-nav{
     animation: fadeIn 2s ease-out forwards;
-    animation-delay: 5s;
+    animation-delay: 1s;
     opacity: 0;
 }
 
