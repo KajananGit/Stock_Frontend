@@ -59,6 +59,7 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 - Run the command ```git clone git@github.com:KajananGit/Stock_Frontend.git```
 - Run the command **git pull** to ensure you have the latest version.
 - Open the project in the preferred IDE such as VSCode.
+- Run the command **npm i**
 - Now the backend API is running, you can run the frontend application by entering the command **npm start** in the terminal.
 
 
