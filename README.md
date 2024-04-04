@@ -38,11 +38,13 @@ This frontend builds on a backend API for a fictional warehouse which contains s
 - Add an expand button to see full order details on the current orders page.
 
 ### Wireframe 
-<img width="485" alt="Screenshot 2024-04-04 at 10 12 57" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/d686b569-e0c2-4af9-b641-744fe5c374e9">
+![diagram024-04-04-1017](https://github.com/KajananGit/Stock_Frontend/assets/156658708/c2e6c41d-4128-433d-a73f-e99a491e86fe)
+
+
 
 
 ### Prop Diagram
-<img width="1134" alt="Screenshot 2024-04-04 at 10 11 54" src="https://github.com/KajananGit/Stock_Frontend/assets/156658708/87b148c9-b6f5-4ff2-88af-e7c41744d442">
+![Untitled-2024-04-04-1017](https://github.com/KajananGit/Stock_Frontend/assets/156658708/6733595c-f3df-4100-98a8-116911c1c0fd)
 
 
 
